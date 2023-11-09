@@ -1,4 +1,4 @@
 #Ignore le dossier target
-*/target/*
+target/
 #Ignore le dossier .idea
-*/.idea/*
+.idea/
