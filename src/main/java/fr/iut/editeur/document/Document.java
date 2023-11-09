@@ -30,4 +30,17 @@ public class Document {
         String rightPart = texte.substring(end);
         texte = leftPart + remplacement + rightPart;
     }
+
+    public void majuscules(int start, int end) {
+        String leftPart = texte.substring(0, start);
+        String rightPart = texte.substring(end);
+        String toUpper = texte.substring(start, end).toUpperCase();
+        texte = leftPart + toUpper + rightPart;
+    }
+
+    public void effacer(int start, int end) {
+        String leftPart = texte.substring(0, start);
+        String rightPart = texte.substring(end);
+        texte = leftPart + rightPart;
+    }
 }
