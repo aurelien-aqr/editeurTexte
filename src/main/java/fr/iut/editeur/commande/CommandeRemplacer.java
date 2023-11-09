@@ -18,5 +18,6 @@ public class CommandeRemplacer extends CommandeDocument{
         String remplacement = parameters[3];
         this.document.remplacer(start, end, remplacement);
         super.executer();
+
     }
 }
