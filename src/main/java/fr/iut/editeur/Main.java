@@ -13,6 +13,7 @@ public class Main {
         Document document = new Document();
         CommandeInvoker invoker = CommandeInvoker.getInstance();
         CommandeFactory factory = CommandeFactory.getInstance();
+        System.out.println("Petit bug léger");
         while(true) {
             String input = scanner.nextLine();
             String[] parameters = input.split(";");
