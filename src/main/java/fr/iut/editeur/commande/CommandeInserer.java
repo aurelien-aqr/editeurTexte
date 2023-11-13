@@ -19,4 +19,9 @@ public class CommandeInserer extends CommandeDocument{
         this.document.inserer(parameters[1], start);
         super.executer();
     }
+
+    @Override
+    public void getDescriptionCommande(){
+        System.out.println("Insère du texte au document à partir de la position start");
+    }
 }
