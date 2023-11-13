@@ -47,4 +47,11 @@ public class Document {
     public void clear() {
         texte = "";
     }
+
+    public void inserer(String ajout, int debut){
+
+        String fin = texte.substring(debut);
+        texte = texte.substring(0,debut);
+        texte += ajout + fin;
+    }
 }
