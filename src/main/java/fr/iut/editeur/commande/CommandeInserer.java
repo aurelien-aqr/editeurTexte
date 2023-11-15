@@ -20,6 +20,9 @@ public class CommandeInserer extends CommandeDocument{
         super.executer();
     }
 
+    /**
+     * @return description de la commande
+     */
     @Override
     public void getDescriptionCommande(){
         System.out.println("Insère du texte au document à partir de la position start");
