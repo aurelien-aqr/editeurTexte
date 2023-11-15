@@ -22,15 +22,25 @@
                     </archive>
                 </configuration>
             </plugin>
+
+            <!-- Add the maven-javadoc-plugin configuration -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>3.6.2</version>
+                <configuration>
+                    <failOnWarnings>false</failOnWarnings>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
-
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
@@ -39,5 +49,4 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
 </project>
