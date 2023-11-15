@@ -18,6 +18,9 @@ jobs:
 
       - name: Java
         uses: actions/setup-java@v1
+        with:
+          java-version: 17
+
 
       - name: Run Unit Tests
         run: mvn test
