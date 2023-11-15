@@ -1,0 +1,30 @@
+#Grâce à ce workflow, faites en sorte qu’un push (sur n’importe quelle branche) exécute les tests unitaires. Dans le job que vous allez mettre en place, utilisez le système ubuntu-latest. N’oubliez pas de nommer chaque step dans votre job.
+
+name: Run Unit Tests
+
+on:
+  push:
+    branches:
+      - '*'
+
+jobs:
+  unit-tests:
+    runs-on: ubuntu-latest
+    name: Execute Unit Tests
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Run Unit Tests
+        run: npm test
+
+
