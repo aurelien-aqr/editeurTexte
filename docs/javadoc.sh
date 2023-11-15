@@ -1,0 +1,1 @@
+/home/depinfo/.jdks/corretto-19.0.2/bin/javadoc @options @packages
